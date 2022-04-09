@@ -11,5 +11,5 @@
 [[ ! -f ~/zsh-config/.configure-docker.zsh ]] || source ~/zsh-config/.configure-docker.zsh
 
 # configure kubectl
-[[ ! -f ~/zsh-config/.configure-kubectl.sh ]] || ~/zsh-config/.configure-kubectl.sh
+[[ ! -f ~/zsh-config/.configure-kubectl.sh ]] || source ~/zsh-config/.configure-kubectl.sh
 
