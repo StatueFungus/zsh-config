@@ -13,3 +13,6 @@
 # configure kubectl
 [[ ! -f ~/zsh-config/.configure-kubectl.sh ]] || source ~/zsh-config/.configure-kubectl.sh
 
+
+# To set the prompt at the bottom
+echo ${(pl.$LINES..\n.)}
