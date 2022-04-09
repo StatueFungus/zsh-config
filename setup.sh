@@ -24,6 +24,17 @@ else
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $POWERLEVEL10K_PATH
 fi
 
+# Install zsh-autosuggestions
+
+AUTOSUGGESTIONS_PATH=${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+if [ -d "$AUTOSUGGESTIONS_PATH" ]; then
+  cd $AUTOSUGGESTIONS_PATH
+  git checkout master && git pull
+else
+  git clone https://github.com/zsh-users/zsh-autosuggestions $AUTOSUGGESTIONS_PATH
+fi
+
+
 # Install fzf
 
 if [ -d "$HOME/.fzf" ]; then
