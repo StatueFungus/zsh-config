@@ -1,8 +1,7 @@
-# configure oh-my-zsh. should be the first to enable instant promt
-[[ ! -f ~/zsh-config/.configure-oh-my-zsh.zsh ]] || source ~/zsh-config/.configure-oh-my-zsh.zsh
+
+# configure oh-my-zsh. Should be at top for instant prompt
 
 # add common aliases
-[[ ! -f ~/zsh-config/.aliases.zsh ]] || source ~/zsh-config/.aliases.zsh
 
 # source prompt
 [[ ! -f ~/zsh-config/.p10k.zsh ]] || source ~/zsh-config/.p10k.zsh
