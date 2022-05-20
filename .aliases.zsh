@@ -15,3 +15,10 @@ alias kga='k get pod -A'
 alias kgn='k get pod -n'
 alias kgaa='k get all --show-labels'
 
+# kube fzf
+alias klog='tailpod -a'
+alias klogj='tailpod -aj'
+alias kdp='describepod -a'
+
+# kubectx
+alias ctx='kubectx'
