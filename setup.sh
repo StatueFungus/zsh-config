@@ -44,3 +44,24 @@ else
   git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/.fzf
   $HOME/.fzf/install --key-bindings --no-completion --no-update-rc
 fi
+
+# Install kube-fzf & kubectx
+
+if [ -d "$HOME/.kube-fzf" ]; then
+  cd $HOME/.kube-fzf
+  git checkout master && git pull
+else
+  git clone git@github.com:StatueFungus/kube-fzf.git $HOME/.kube-fzf
+fi
+
+
+if [ -d "$HOME/.kube-ctx" ]; then
+  cd $HOME/.kube-ctx
+  git checkout master && git pull
+else
+  git clone https://github.com/ahmetb/kubectx $HOME/.kube-ctx
+fi
+
+# we have to configure it here, because it will create symbolic links that require sudo
+[[ ! -f ~/zsh-config/.configure-kube-fzf.sh ]] || source ~/zsh-config/.configure-kube-fzf.sh
+[[ ! -f ~/zsh-config/.configure-kube-ctx.sh ]] || source ~/zsh-config/.configure-kube-ctx.sh

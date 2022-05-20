@@ -16,3 +16,4 @@
 # configure kubectl
 [[ ! -f ~/zsh-config/.configure-kubectl.sh ]] || source ~/zsh-config/.configure-kubectl.sh
 
+
